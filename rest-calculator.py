@@ -1,5 +1,4 @@
 import math
-import time
 
 # In 24 uur moet je minimaal 11 uur aan een stuk rusten. 
 # Dus je mag 13 uur per dag rijden 
