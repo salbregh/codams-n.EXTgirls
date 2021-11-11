@@ -9,9 +9,9 @@
 - The Web: Find the stops on the map
 - The App: Rate facilities and safety at rest stops
 
+## - The Rest Calculator: Calculate when to make a stop
 <img src="/pics/truck-park.gif" height="150" />
 
-## - The Rest Calculator: Calculate when to make a stop
 Each 24 hours, a truck driver has to rest for 11 hours uninteruptedly. That means there is a maximum driving slot of 13 hours per day. Two short stops of 45 minutes per day are necessary, since 4,5 hours driving without stopping is the maximum according to the law.
 
 In total, there is 11,5 hours per day a truck can actually drive.
