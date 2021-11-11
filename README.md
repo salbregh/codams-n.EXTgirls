@@ -6,8 +6,8 @@
 
 ##### This repository contains three different elements that contribute to reaching our goal:
 - The Rest Calculator: Calculate when to make a stop
-- The Web: Find the stops on the map
 - The App: Rate facilities and safety at rest stops
+- The Web: Find the stops on the map
 
 ## - The Rest Calculator: Calculate when to make a stop
 <img src="/pics/truck-park.gif" height="150" />
@@ -24,8 +24,6 @@ python3 rest-calculator.py
 ```
 The program will ask for input. Enter a distance in kilometers and an average speed in km/h to get the iternary plan for the truck delivery. With this tool a truck driver will never get a fine for breaking the driving times law again!
 
-## The Web: Find the stops on the map
-### hier komt mares en tessa's web applicatie om de punten op de kaart te showen
 
 ## - The App: Rate facilities and safety at rest stops
 <img src="/pics/the-app.png" height="500" />
@@ -45,3 +43,8 @@ When the user clicks an icon linked to one of these services, implying it's pres
 
 Based on these scores, we create a facility and a safety rating. The data this tool collects about rest stops is very valuable to truck drivers to plan a safe and efficient iternary.
 
+## The Web: Find the stops on the map
+Based on the results of the Rest Calculator, and results of user input on facilities and safety, resting points will be shown on the map. For every stop that has to be made, a few options are shown. The facility and safety rating is shown when a stop is clicked. This way, a driver can decide which stop suits their needs te best. 45 minute stop? Look for high facility rating! 11 hour stop? Make sure the spot has a high safety rating! 
+
+
+### screenshot van map en informatie over rest stop
