@@ -47,8 +47,6 @@ Based on these scores, we create a facility and a safety rating. The data this t
 
 ## The Web: Find the stops on the map
 <img src="/pics/MapOverview.png" />
-Based on the results of the Rest Calculator, and results of user input on facilities and safety, resting points will be shown on the map. For every stop that has to be made, a few options are shown. The facility and safety rating is shown when a stop is clicked. This way, a driver can decide which stop suits their needs te best. 45 minute stop? Look for high facility rating! 11 hour stop? Make sure the spot has a high safety rating! 
+Based on the results of the Rest Calculator, and results of user input on facilities and safety, resting points will be shown on the map. For every stop that has to be made, a few options are shown. The facility and safety rating is shown when a stop is clicked. This way, a driver can decide which stop suits their needs te best. 45 minute stop? Look for high facility rating! 11 hour stop? Make sure the spot has a high safety rating!
+
 <img src="/pics/zoomedinfo.png" height="200" />
-
-
-### screenshot van map en informatie over rest stop
