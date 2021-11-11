@@ -11,7 +11,7 @@ const stores = {
       },
       "properties": {
           "address": "Codam Coding College, Amsterdam, The Netherlands",
-          "city": "Starting Point - we need a holiday",
+          "city": "Starting Point: Codam Coding College",
           "address": "Codam Coding College, Amsterdam, The Netherlands",
           "facility": "Facility rating: 5/5",
           "safety": "Safety rating: 5/5"
@@ -172,7 +172,7 @@ const stores = {
         },
         "properties": {
           "address": "Sagrada Familia, Barcelona, Spain",
-          "city": "Final Destination :) ",
+          "city": "Final Destination 🚩",
           "facility": "Facility rating: 3/5",
           "safety": "Safety rating: 4/5"
         }
