@@ -43,7 +43,7 @@ When the user clicks an icon linked to one of these services, implying it's pres
 
 Based on these scores, we create a facility and a safety rating. The data this tool collects about rest stops is very valuable to truck drivers to plan a safe and efficient iternary.
 
-<img src="/pics/app.gif" alt="animated" />
+<img src="/pics/app.gif" alt="animated"  height="600" />
 
 ## The Web: Find the stops on the map
 <img src="/pics/MapOverview.png" />
