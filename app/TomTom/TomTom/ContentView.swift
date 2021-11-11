@@ -24,6 +24,9 @@ enum Sheets: Identifiable {
     case sheet_hotel;
     case sheet_shower;
     case sheet_restaurant;
+    case sheet_comments;
+    case sheet_finished;
+    case sheet_safety;
 //    case sheet_main;
 }
 
@@ -44,6 +47,8 @@ struct ContentView: View {
     @State private var rating_hotel = 0.0
     @State private var rating_shower = 0.0
     @State private var rating_restaurant = 0.0
+    
+    @State private var comments = "Enter comments"
     
     var body: some View {
         VStack { // should stack element vertically on top of eachother
@@ -153,7 +158,7 @@ struct ContentView: View {
             Spacer()
             
             Button(action: {
-                print("vervang dit voor een functie die naar volgende pagina gaat?")
+                activeSheet = .sheet_comments
             }) {
                 Text("Submit Form")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -197,7 +202,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("licht")
                         Slider(
-                            value: $rating,
+                            value: $rating_light,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -207,7 +212,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_light)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -246,7 +251,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("antenne")
                         Slider(
-                            value: $rating,
+                            value: $rating_service,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -256,7 +261,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_service)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -294,7 +299,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("tanken")
                         Slider(
-                            value: $rating,
+                            value: $rating_petrol,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -304,7 +309,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_petrol)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -341,7 +346,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("supermarket")
                         Slider(
-                            value: $rating,
+                            value: $rating_supermarket,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -351,7 +356,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_supermarket)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -388,7 +393,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("camera")
                         Slider(
-                            value: $rating,
+                            value: $rating_surveillance,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -398,7 +403,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_surveillance)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -435,7 +440,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("wc")
                         Slider(
-                            value: $rating,
+                            value: $rating_toilet,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -445,7 +450,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_toilet)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -482,7 +487,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("slapen")
                         Slider(
-                            value: $rating,
+                            value: $rating_hotel,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -492,7 +497,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_hotel)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -529,7 +534,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("douche")
                         Slider(
-                            value: $rating,
+                            value: $rating_shower,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -539,7 +544,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_shower)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -576,7 +581,7 @@ struct ContentView: View {
                             .padding(.bottom)
                         Image("bestek")
                         Slider(
-                            value: $rating,
+                            value: $rating_restaurant,
                             in: 0...5,
                             step:1,
                             onEditingChanged: { editing in
@@ -586,7 +591,7 @@ struct ContentView: View {
                             .accentColor(.black)
                             
                         Spacer()
-                        Text("\(rating)")
+                        Text("\(rating_restaurant)")
                             .foregroundColor(isEditing ? .black : .green)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.custom("Helvetica", size:25))
@@ -609,6 +614,98 @@ struct ContentView: View {
                         Spacer()
                         
                     }
+                    
+                // HOW SAFE DO YOU FEEL AT THIS REST STOP
+                
+                case.sheet_comments:
+                    VStack {
+                        Spacer()
+                        Text("What was your overall experience at this resting point?")
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .font(.custom("Helvetica", size:30))
+                            .padding(20)
+                        Spacer()
+                        TextEditor(text: $comments)
+                            .lineSpacing(10)
+                            .foregroundColor(.secondary)
+                            .padding(.all, 35.0)
+                            .frame(minWidth: 0, maxWidth: 300, minHeight: 0, maxHeight: 300)
+                            .border(Color.black, width:2)
+                        Spacer()
+                        
+                        Button(action: {
+                            activeSheet = .sheet_safety
+                        }) {
+                            Text("Submit comment")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .frame(minWidth: 0)
+                                .font(.system(size: 30))
+                                .padding()
+                                .foregroundColor(.black)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.black, lineWidth: 4)
+                            )
+                        }
+                        Spacer()
+                    }
+                                    
+
+            
+                case .sheet_safety:
+                    VStack(alignment: .center) {
+                        Spacer()
+                        Text("How would you rate the overall safety of this resting point?")
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .font(.custom("Helvetica", size:30))
+                            .padding(20)
+                        Image("safety") // change
+                        Slider(
+                            value: $rating,
+                            in: 0...5,
+                            step:1,
+                            onEditingChanged: { editing in
+                            isEditing = editing
+                            }
+                        )   .padding(40)
+                            .accentColor(.black)
+                            
+                        Spacer()
+                        Text("\(rating)")
+                            .foregroundColor(isEditing ? .black : .green)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .font(.custom("Helvetica", size:25))
+                        Spacer()
+                        Button(action: {
+                            activeSheet = .sheet_finished
+                            
+                        }) {
+                            Text("Submit Rating")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .frame(minWidth: 0)
+                                .font(.system(size: 30))
+                                .padding()
+                                .foregroundColor(.black)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.black, lineWidth: 4)
+                            )
+                        }
+                        Spacer()
+                        
+                    }
+                    
+                    case.sheet_finished:
+                        Text("Thank you for submitting your rating about this rest point")
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.center)
+                            .frame(minWidth: 0)
+                            .font(.system(size: 30))
+                            .padding()
+                            .foregroundColor(.black)
+            
             }
         
         }
