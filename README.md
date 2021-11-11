@@ -1,7 +1,8 @@
 # Get the best rest!
-Hello and welcome to our GitHub repository for the TomToms n.EXT hackaton! We are CODAM's n.EXT level girls Tessa, Sanne, Maria and Mares. We have developed a tool for truck drivers to find and rate resting points to improve efficiency and safety during truck drivers' delivery.
-
 ![Alt text](/pics/trucks.jpeg "Trucks")
+### Hello and welcome to our GitHub repository for the TomToms n.EXT hackaton! 🚛
+We are CODAM's n.EXT level girls Tessa, Sanne, Maria and Mares. We have developed a tool for truck drivers to find and rate resting points to improve efficiency and safety during truck drivers' delivery.
+
 
 This repository contains the following files that contribute to reaching this goal:
 - rest-calculator.py: to get information on when a break is necessary
