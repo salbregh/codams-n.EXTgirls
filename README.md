@@ -4,12 +4,13 @@
 #### We are CODAM's n.EXT level girls (from left to right) Tessa, Sanne, Maria and Mares. We have developed a tool for truck drivers to find and rate resting points to improve efficiency and safety during truck drivers' delivery.
 
 
-#### This repository contains three different elements that contribute to reaching our goal:
-#### - The Rest Calculator: Calculate when to make a stop
-#### - The Web: Find the stops on the map
-#### - The App: Rate facilities and safety at rest stops
+##### This repository contains three different elements that contribute to reaching our goal:
+- The Rest Calculator: Calculate when to make a stop
+- The Web: Find the stops on the map
+- The App: Rate facilities and safety at rest stops
 
 <img src="/pics/truck-park.gif" height="150" />
+
 ## - The Rest Calculator: Calculate when to make a stop
 Each 24 hours, a truck driver has to rest for 11 hours uninteruptedly. That means there is a maximum driving slot of 13 hours per day. Two short stops of 45 minutes per day are necessary, since 4,5 hours driving without stopping is the maximum according to the law.
 
