@@ -28,6 +28,13 @@ The program will ask for input. Enter a distance in kilometers and an average sp
 ## - The App: Rate facilities and safety at rest stops
 <img src="/pics/the-app.png" height="500" />
 
+### Usage:
+To run the application, open 
+[The App](app/TomTom/TomTom.xcodeproj) in Xcode. Select iPhone 11 view for the best experience. Then just click the play button to explore the functionality of the app!
+
+```console
+TomTom.xcodeproj
+```
 The app we made is meant as an additional functionality to the existing TomTom navigator. The objective of the tool we want to add is that users are able to rate the facilities and safety at rest stops they have visited. With a simple user interface, users can rate the rest stop based on 9 criteria. When the GPS location of a vehicle has been on a rest stop for more than 30 minutes, the driver of the vehicle will get a notification from the TomTom app with the request to answer some questions about the rest stop. The user will provide information on the presence of the following services:
 - illuminated parking
 - gas
