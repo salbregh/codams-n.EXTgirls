@@ -8,8 +8,7 @@ This repository contains the following files that contribute to reaching this go
 - rest-calculator.py: to get information on when a break is necessary
 - !!!!!!!!!!!!!!!!!!! hier ook de andere files bijzetten en kort uitleggen !!!!!!!!!
 
-## Rest calculator
-### Algorithm that calculates when a truck driver has to make stops based on the distance and average speed.
+### 😴 Rest calculator: Algorithm that calculates when a truck driver has to make stops based on the distance and average speed.
 Each 24 hours, a truck driver has to rest for 11 hours uninteruptedly. That means there is a maximum driving slot of 13 hours per day. Two short stops of 45 minutes per day are necessary, since 4,5 hours driving without stopping is the maximum according to the law.
 
 In total, there is 11,5 hours per day a truck can actually drive.
