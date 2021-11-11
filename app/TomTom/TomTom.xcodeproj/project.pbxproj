@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010D12F9273D0F4E0074CC7A /* TomTomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D12F8273D0F4E0074CC7A /* TomTomApp.swift */; };
+		010D12FB273D0F4E0074CC7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D12FA273D0F4E0074CC7A /* ContentView.swift */; };
+		010D12FD273D0F4F0074CC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D12FC273D0F4F0074CC7A /* Assets.xcassets */; };
+		010D1300273D0F4F0074CC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010D12FF273D0F4F0074CC7A /* Preview Assets.xcassets */; };
+		010D130B273D0F4F0074CC7A /* TomTomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D130A273D0F4F0074CC7A /* TomTomTests.swift */; };
+		010D1316273D0F4F0074CC7A /* TomTomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D1315273D0F4F0074CC7A /* TomTomUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		010D1307273D0F4F0074CC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 010D12ED273D0F4E0074CC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 010D12F4273D0F4E0074CC7A;
+			remoteInfo = TomTom;
+		};
+		010D1312273D0F4F0074CC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 010D12ED273D0F4E0074CC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 010D12F4273D0F4E0074CC7A;
+			remoteInfo = TomTom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010D12F5273D0F4E0074CC7A /* TomTom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomTom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		010D12F8273D0F4E0074CC7A /* TomTomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomApp.swift; sourceTree = "<group>"; };
+		010D12FA273D0F4E0074CC7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		010D12FC273D0F4F0074CC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		010D12FF273D0F4F0074CC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		010D1301273D0F4F0074CC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010D1306273D0F4F0074CC7A /* TomTomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomTomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		010D130A273D0F4F0074CC7A /* TomTomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomTests.swift; sourceTree = "<group>"; };
+		010D130C273D0F4F0074CC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010D1311273D0F4F0074CC7A /* TomTomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomTomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		010D1315273D0F4F0074CC7A /* TomTomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomUITests.swift; sourceTree = "<group>"; };
+		010D1317273D0F4F0074CC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		010D12F2273D0F4E0074CC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D1303273D0F4F0074CC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D130E273D0F4F0074CC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010D12EC273D0F4E0074CC7A = {
+			isa = PBXGroup;
+			children = (
+				010D12F7273D0F4E0074CC7A /* TomTom */,
+				010D1309273D0F4F0074CC7A /* TomTomTests */,
+				010D1314273D0F4F0074CC7A /* TomTomUITests */,
+				010D12F6273D0F4E0074CC7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		010D12F6273D0F4E0074CC7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010D12F5273D0F4E0074CC7A /* TomTom.app */,
+				010D1306273D0F4F0074CC7A /* TomTomTests.xctest */,
+				010D1311273D0F4F0074CC7A /* TomTomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		010D12F7273D0F4E0074CC7A /* TomTom */ = {
+			isa = PBXGroup;
+			children = (
+				010D12F8273D0F4E0074CC7A /* TomTomApp.swift */,
+				010D12FA273D0F4E0074CC7A /* ContentView.swift */,
+				010D12FC273D0F4F0074CC7A /* Assets.xcassets */,
+				010D1301273D0F4F0074CC7A /* Info.plist */,
+				010D12FE273D0F4F0074CC7A /* Preview Content */,
+			);
+			path = TomTom;
+			sourceTree = "<group>";
+		};
+		010D12FE273D0F4F0074CC7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				010D12FF273D0F4F0074CC7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		010D1309273D0F4F0074CC7A /* TomTomTests */ = {
+			isa = PBXGroup;
+			children = (
+				010D130A273D0F4F0074CC7A /* TomTomTests.swift */,
+				010D130C273D0F4F0074CC7A /* Info.plist */,
+			);
+			path = TomTomTests;
+			sourceTree = "<group>";
+		};
+		010D1314273D0F4F0074CC7A /* TomTomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				010D1315273D0F4F0074CC7A /* TomTomUITests.swift */,
+				010D1317273D0F4F0074CC7A /* Info.plist */,
+			);
+			path = TomTomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010D12F4273D0F4E0074CC7A /* TomTom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010D131A273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTom" */;
+			buildPhases = (
+				010D12F1273D0F4E0074CC7A /* Sources */,
+				010D12F2273D0F4E0074CC7A /* Frameworks */,
+				010D12F3273D0F4E0074CC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TomTom;
+			productName = TomTom;
+			productReference = 010D12F5273D0F4E0074CC7A /* TomTom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		010D1305273D0F4F0074CC7A /* TomTomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010D131D273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTomTests" */;
+			buildPhases = (
+				010D1302273D0F4F0074CC7A /* Sources */,
+				010D1303273D0F4F0074CC7A /* Frameworks */,
+				010D1304273D0F4F0074CC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				010D1308273D0F4F0074CC7A /* PBXTargetDependency */,
+			);
+			name = TomTomTests;
+			productName = TomTomTests;
+			productReference = 010D1306273D0F4F0074CC7A /* TomTomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		010D1310273D0F4F0074CC7A /* TomTomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010D1320273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTomUITests" */;
+			buildPhases = (
+				010D130D273D0F4F0074CC7A /* Sources */,
+				010D130E273D0F4F0074CC7A /* Frameworks */,
+				010D130F273D0F4F0074CC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				010D1313273D0F4F0074CC7A /* PBXTargetDependency */,
+			);
+			name = TomTomUITests;
+			productName = TomTomUITests;
+			productReference = 010D1311273D0F4F0074CC7A /* TomTomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		010D12ED273D0F4E0074CC7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					010D12F4273D0F4E0074CC7A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					010D1305273D0F4F0074CC7A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 010D12F4273D0F4E0074CC7A;
+					};
+					010D1310273D0F4F0074CC7A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 010D12F4273D0F4E0074CC7A;
+					};
+				};
+			};
+			buildConfigurationList = 010D12F0273D0F4E0074CC7A /* Build configuration list for PBXProject "TomTom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 010D12EC273D0F4E0074CC7A;
+			productRefGroup = 010D12F6273D0F4E0074CC7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010D12F4273D0F4E0074CC7A /* TomTom */,
+				010D1305273D0F4F0074CC7A /* TomTomTests */,
+				010D1310273D0F4F0074CC7A /* TomTomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		010D12F3273D0F4E0074CC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010D1300273D0F4F0074CC7A /* Preview Assets.xcassets in Resources */,
+				010D12FD273D0F4F0074CC7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D1304273D0F4F0074CC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D130F273D0F4F0074CC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010D12F1273D0F4E0074CC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010D12FB273D0F4E0074CC7A /* ContentView.swift in Sources */,
+				010D12F9273D0F4E0074CC7A /* TomTomApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D1302273D0F4F0074CC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010D130B273D0F4F0074CC7A /* TomTomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010D130D273D0F4F0074CC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010D1316273D0F4F0074CC7A /* TomTomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		010D1308273D0F4F0074CC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 010D12F4273D0F4E0074CC7A /* TomTom */;
+			targetProxy = 010D1307273D0F4F0074CC7A /* PBXContainerItemProxy */;
+		};
+		010D1313273D0F4F0074CC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 010D12F4273D0F4E0074CC7A /* TomTom */;
+			targetProxy = 010D1312273D0F4F0074CC7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		010D1318273D0F4F0074CC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		010D1319273D0F4F0074CC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		010D131B273D0F4F0074CC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TomTom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TomTom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		010D131C273D0F4F0074CC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TomTom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TomTom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		010D131E273D0F4F0074CC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TomTomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomTom.app/TomTom";
+			};
+			name = Debug;
+		};
+		010D131F273D0F4F0074CC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TomTomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomTom.app/TomTom";
+			};
+			name = Release;
+		};
+		010D1321273D0F4F0074CC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TomTomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TomTom;
+			};
+			name = Debug;
+		};
+		010D1322273D0F4F0074CC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TomTomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = salbregh.TomTomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TomTom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010D12F0273D0F4E0074CC7A /* Build configuration list for PBXProject "TomTom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010D1318273D0F4F0074CC7A /* Debug */,
+				010D1319273D0F4F0074CC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010D131A273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010D131B273D0F4F0074CC7A /* Debug */,
+				010D131C273D0F4F0074CC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010D131D273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010D131E273D0F4F0074CC7A /* Debug */,
+				010D131F273D0F4F0074CC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010D1320273D0F4F0074CC7A /* Build configuration list for PBXNativeTarget "TomTomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010D1321273D0F4F0074CC7A /* Debug */,
+				010D1322273D0F4F0074CC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 010D12ED273D0F4E0074CC7A /* Project object */;
+}
