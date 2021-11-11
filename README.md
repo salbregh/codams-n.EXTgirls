@@ -25,5 +25,20 @@ The program will ask for input. Enter a distance in kilometers and an average sp
 ### hier komt mares en tessa's web applicatie om de punten op de kaart te showen
 
 ## The app
+![Alt text](/pics/the-app.png "The App")
 ### hier komt sannes app en uitleg van hoe het werkt
+The app we made is meant as an additional functionality to the existing TomTom navigator. The objective of the tool we want to add is that users are able to rate the facilities and safety at rest stops they have visited. With a simple user interface, users can rate the rest stop based on 9 criteria. When the GPS location of a vehicle has been on a rest stop for more than 30 minutes, the driver of the vehicle will get a notification from the TomTom app with the request to answer some questions about the rest stop. The user will provide information on the presence of the following services:
+- illuminated parking
+- gas
+- restaurant
+- supermarket
+- camera surveillance
+- toilets
+- hotel/pension
+- showers
+- cell service
+
+When the user clicks an icon linked to one of these services, implying it's present at the rest stop, they are asked to rate the service on a scale of 1 - 5. When the user has clicked all present services, the 'Submit' button is pressed. Then, a final question will be asked: How safe do you feel at this rest stop?
+
+Based on these scores, we create a facility and a safety rating. The data this tool collects about rest stops is very valuable to truck drivers to plan a safe and efficient iternary.
 
