@@ -1,0 +1,107 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #707070;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.map {
+    bottom: 0;
+    left: 25%;
+    position: absolute;
+    top: 0;
+    width: 75%;
+    z-index: -1;
+}
+
+.control-panel {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 25%;
+}
+
+.heading {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    z-index: 1;
+}
+
+.heading > img {
+    width: 100%;
+}
+
+#store-list {
+    height: 100%;
+    overflow: auto;
+}
+
+#store-list .list-entries-container .list-entry {
+    border-bottom: 1px solid #e8e8e8;
+    display: block;
+    padding: 10px 50px 10px;
+}
+
+#store-list .list-entries-container .list-entry:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+
+#store-list .list-entries-container .list-entry:hover,
+#store-list .list-entries-container .list-entry.selected {
+    background-color: #CDDE75;
+    border-bottom-color: #CDDE75;
+}
+
+/* jQuery UI accordion styling */
+
+.ui-accordion h3.ui-accordion-header {
+    background-color: #F4F6F8;
+    border-color: #dddfe0;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    color: #707070;
+    display: block;
+    font-size: 1.143em;
+    margin: 0;
+    padding: 15px 20px;
+}
+
+.ui-accordion h3.ui-accordion-header.ui-state-active {
+    color: #fff;
+    background-color: #BDD731;
+    border-bottom-color: #a2ba24;
+}
+
+.ui-accordion .ui-accordion-content {
+    border: none;
+    padding: 0;
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+    margin-right: 15px;
+}
+
+.heading {
+    display: grid;
+    place-content: center;
+}

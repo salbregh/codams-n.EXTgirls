@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>zuipeeeee</title>
+    <link href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps.css' rel='stylesheet'
+        type='text/css'>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.15.0/maps/maps-web.min.js'></script>
+    <link href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' rel='stylesheet'>
+    <script src='stores.js' type='text/javascript'></script>
+    <link href='styles.css' rel='stylesheet' type='text/css' />
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+</head>
+
+<body>
+    <div class='control-panel'>
+        <div class='heading'>
+            <img src='img/logo.png'>
+        </div>
+        <div id='store-list'></div>
+    </div>
+    <div class='map' id='map'></div>
+    <script>
+        const apiKey = 'tr2fACJL4EYcnef6DbSOWoq6XDaf9cpI';
+        const map = tt.map({
+            key: apiKey,
+            container: 'map',
+            center: [4.573040, 52.138950],
+            zoom: 9
+        });
+
+        const markersCity = [];
+        const list = document.getElementById('store-list');
+
+        stores.features.forEach(function (store, index) {
+            const city = store.properties.city;
+            const address = store.properties.address;
+            const facility = store.properties.facility;
+            const safety = store.properties.safety;
+            const location = store.geometry.coordinates;
+            const marker = new tt.Marker().setLngLat(location).setPopup(new tt.Popup({offset: 35}).setHTML(address)).addTo(map);
+            markersCity[index] = {
+                city
+            };console.log(store.properties.facility);
+
+            let cityStoresList = document.getElementById(city);
+            if (cityStoresList === null) {
+                const cityStoresListHeading = list.appendChild(document.createElement('h3'));
+                cityStoresListHeading.innerHTML = city;
+                cityStoresList = list.appendChild(document.createElement('div'));
+                cityStoresList.id = city;
+                cityStoresList.className = 'list-entries-container';
+                cityStoresListHeading.addEventListener('click', function (e) {
+                    map.fitBounds(getMarkersBoundsForCity(e.target.innerText), {
+                        padding: 50
+                    });
+                });
+            }
+
+            const details = buildLocation(cityStoresList, address);
+
+            marker.getElement().addEventListener('click', function () {
+                const activeItem = document.getElementsByClassName('selected');
+                if (activeItem[0]) {
+                    activeItem[0].classList.remove('selected');
+                }
+                details.classList.add('selected');
+                openCityTab(city);
+            });
+
+            details.addEventListener('click', function () {
+                const activeItem = document.getElementsByClassName('selected');
+                if (activeItem[0]) {
+                    activeItem[0].classList.remove('selected');
+                }
+                details.classList.add('selected');
+                map.flyTo({
+                    center: marker.getLngLat(),
+                    zoom: 12
+                });
+                closeAllPopups();
+                marker.togglePopup();
+
+            });
+
+            function buildLocation(htmlParent, text) {
+                const details = htmlParent.appendChild(document.createElement('a'));
+                details.href = '#';
+                details.className = 'list-entry';
+                details.innerHTML = text;
+                return details;
+            }
+
+            function closeAllPopups() {
+                markersCity.forEach(markerCity => {
+                    if (markerCity.marker.getPopup().isOpen()) {
+                        markerCity.marker.togglePopup();
+                    }
+                });
+            }
+
+            function getMarkersBoundsForCity(city) {
+                const bounds = new tt.LngLatBounds();
+                markersCity.forEach(markerCity => {
+                    if (markerCity.city === city) {
+                        bounds.extend(markerCity.marker.getLngLat());
+                    }
+                });
+                return bounds;
+            }
+
+            function openCityTab(selected_id) {
+                const storeListElement = $('#store-list');
+                const citiesListDiv = storeListElement.find('div.list-entries-container');
+                for (let activeCityIndex = 0; activeCityIndex < citiesListDiv.length; activeCityIndex++) {
+                    if (citiesListDiv[activeCityIndex].id === selected_id) {
+                        storeListElement.accordion('option', {
+                            'active': activeCityIndex
+                        });
+                    }
+                }
+            }
+        });
+
+        $('#store-list').accordion({
+            'icons': {
+                'header': 'ui-icon-plus',
+                'activeHeader': 'ui-icon-minus'
+            },
+            'heightStyle': 'content',
+            'collapsible': true,
+            'active': false
+        });
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Starting Point - we need a holiday")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 5/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 5/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Hattencourt")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 1/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 4/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Feuillères")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 2/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 4/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Poinville")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 4/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 2/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Tillay-le-Péneux")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 2/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 4/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Payrac")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 1/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 3/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Larnagol")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 3/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 1/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Saint-Céré")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 4/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 5/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Cahors")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 5/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 2/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Rest stop option Gramat")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 3/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 2/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed')
+            let element = document.getElementById("Final Destination :) ")
+            console.log("element = ", element)
+
+            let node = document.createElement("A")
+            node.className = "list-entry"
+            node.innerHTML = "Facility rating: 3/5"
+            element.appendChild(node)
+
+            let nodeTwo = document.createElement("A")
+            nodeTwo.className = "list-entry"
+            nodeTwo.innerHTML = "Safety rating: 5/5"
+            element.appendChild(nodeTwo)
+        })
+    </script>
+</body>
+
+</html>
