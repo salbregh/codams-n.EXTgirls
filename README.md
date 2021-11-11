@@ -19,7 +19,7 @@ To run the algorithm, run the following command.
 ```console
 python3 rest-calculator.py
 ```
-The program will ask for input. Enter a distance in kilometers and an average speed in km/h to get the iternary plan for the truck delivery. 
+The program will ask for input. Enter a distance in kilometers and an average speed in km/h to get the iternary plan for the truck delivery. With this tool a truck driver will never get a fine for breaking the driving times law again!
 
 ## The web
 ### hier komt mares en tessa's web applicatie om de punten op de kaart te showen
