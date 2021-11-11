@@ -1,12 +1,13 @@
 import math
 
-# In 24 uur moet je minimaal 11 uur aan een stuk rusten. 
-# Dus je mag 13 uur per dag rijden 
-# 2 keer 45 minuten pauze = 1,5 uur
-# 13 - 1,5 = 11,5 uur per dag
+# Each 24 hours, a truck driver has to rest for 11 hours uninteruptedly
+# That means there is a maximum driving slot of 13 hours per day
+# 2 short stops of 45 minutes per day are necessary, since 4,5 hours driving without stopping is the maximum
 
-# hoeveel dagen heb je nodig: 
-# Totaal aantal uur / 11,5
+# In total, there is 11,5 hours per day a truck can actually drive.
+# Based on these rules, this algorithm calculates how many stops have to be made and after how many kilometers.
+
+# Have a safe journey! :)
 
 distance_input = input("Distance in kilometers: ")
 speed_input = input("Average speed in km/h: ")
